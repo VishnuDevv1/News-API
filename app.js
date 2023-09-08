@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 app.use(router);
 
-const port = 8080;
+const port = process.env.PORT || 3001;
 
 app.listen(port, ()=>{
     console.log(`listening on port ${port}`);
